@@ -1,49 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive rating component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<title>Frontend Mentor | Interactive rating component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Rating state start -->
+		<section class="rating-container ">
+			<img class="rating-img" src="./images/icon-star.svg" alt="Star Icon" />
+			<h1 class="rating-title">How did we do?</h1>
+			<p class="rating-text">
+				Please let us know how we did with your support request. All
+				feedback is appreciated to help us improve our offering!
+			</p>
+			<div class="rating-score">
+				<button class="rating-option">1</button>
+				<button class="rating-option">2</button>
+				<button class="rating-option">3</button>
+				<button class="rating-option">4</button>
+				<button class="rating-option">5</button>
+			</div>
+			<button class="rating-button">Submit</button>
+		</section>
+		<!-- Rating state end -->
 
-  <!-- Rating state start -->
+		<!-- Thank you state start -->
+		<section class="rating-container thank-you-container">
+      <div>
+        <img class="thank-you-img" src="./images/illustration-thank-you.svg" alt="Thank you Icon"></img>
+      </div>
+			<!-- Add rating here -->
+			<p class="thank-you-special-text">You selected 4 out of 5</p>
+			
+      <h1 class="thank-you-title">Thank you!</h1> 
+      <p class="thank-you-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+			
+		</section>
 
-  How did we do?
+		<!-- Thank you state end -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
 </html>

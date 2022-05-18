@@ -1,0 +1,160 @@
+/*>>>>>>>>>>>>>>>>>>>>
+ CSS Variables Config
+<<<<<<<<<<<<<<<<<<<<*/
+:root {
+	--white: #fdffff;
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-blue: #1e2631;
+	--very-dark-blue: hsl(216, 12%, 8%);
+	--orange-primary: hsl(25, 97%, 53%);
+}
+
+/* Reseting Default Browser styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	align-items: center;
+	background-color: var(--very-dark-blue);
+	display: flex;
+	flex-direction: column;
+	font-family: 'Overpass', sans-serif;
+	font-size: 15px;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+button {
+	cursor: pointer;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>
+  Rating Card Styles
+<<<<<<<<<<<<<<<<<<<<*/
+.hidden {
+	display: none;
+}
+
+.rating-container,
+.thank-you-container {
+	background-color: #1e2631;
+	border-radius: 30px;
+	max-width: 450px;
+	padding: 3em;
+	width: 90%;
+}
+
+.rating-img {
+	background-color: #243038;
+	border-radius: 50%;
+	margin-bottom: 2em;
+	padding: 1em;
+}
+
+.rating-title {
+	color: var(--white);
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-bottom: 0.5em;
+}
+
+.rating-text {
+	color: var(--medium-grey);
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 1.2px;
+	line-height: 1.7em;
+}
+
+.rating-score {
+	display: flex;
+	justify-content: space-between;
+	margin: 1.5em 0;
+}
+
+.rating-option {
+	background-color: #243038;
+	border: none;
+	border-radius: 50%;
+	color: var(--white);
+	font-size: 1rem;
+	height: 50px;
+	padding: 0.5em;
+	transition: all 0.3s ease;
+	width: 50px;
+}
+
+.rating-option:hover {
+	background-color: var(--medium-grey);
+}
+
+.rating-option:active {
+	background-color: var(--orange-primary);
+}
+
+.rating-button {
+	background-color: var(--orange-primary);
+	border: none;
+	border-radius: 50px;
+	color: var(--white);
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	margin: 0.5em 0 0 0;
+	padding: 1em;
+	text-transform: uppercase;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	width: 100%;
+}
+
+.rating-button:hover {
+	background-color: var(--white);
+	color: var(--orange-primary);
+}
+
+/*>>>>>>>>>>>>>>>>>>>>
+ Thank you Card Styles
+<<<<<<<<<<<<<<<<<<<<*/
+.thank-you-container {
+	text-align: center;
+}
+
+.thank-you-img {
+	justify-content: center;
+	margin-bottom: 2.5em;
+	transform: scale(1.1);
+}
+
+.thank-you-special-text {
+	background-color: #243038;
+	border-radius: 50px;
+	color: var(--orange-primary);
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: 1.1px;
+	padding: 0.25em 1em;
+}
+
+.thank-you-title {
+	color: var(--white);
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: 0.75px;
+	margin: 1em 0 0.5em;
+}
+
+.thank-you-text {
+	color: var(--light-grey);
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.7em;
+}
