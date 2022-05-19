@@ -1,16 +1,10 @@
-<!DOCTYPE html>
+lear<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
-
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 		<title>Frontend Mentor | Interactive rating component</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,19 +14,10 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<!-- Rating state start -->
-		<section class="rating-container ">
+		<section class="rating-container" id="request">
 			<img class="rating-img" src="./images/icon-star.svg" alt="Star Icon" />
 			<h1 class="rating-title">How did we do?</h1>
 			<p class="rating-text">
@@ -40,23 +25,27 @@
 				feedback is appreciated to help us improve our offering!
 			</p>
 			<div class="rating-score">
-				<button class="rating-option">1</button>
-				<button class="rating-option">2</button>
-				<button class="rating-option">3</button>
-				<button class="rating-option">4</button>
-				<button class="rating-option">5</button>
+				<button class="rating-option" data-id="1">1</button>
+				<button class="rating-option" data-id="2">2</button>
+				<button class="rating-option" data-id="3">3</button>
+				<button class="rating-option" data-id="4">4</button>
+				<button class="rating-option" data-id="5">5</button>
 			</div>
 			<button class="rating-button">Submit</button>
 		</section>
+
+		<div class="error hidden">
+        <p>Please rate our service to submit it</p>
+    </div>
 		<!-- Rating state end -->
 
 		<!-- Thank you state start -->
-		<section class="rating-container thank-you-container">
+		<section class="rating-container thank-you-container hidden" id="thanks">
       <div>
         <img class="thank-you-img" src="./images/illustration-thank-you.svg" alt="Thank you Icon"></img>
       </div>
 			<!-- Add rating here -->
-			<p class="thank-you-special-text">You selected 4 out of 5</p>
+			<p class="thank-you-special-text">You selected  out of 5</p>
 			
       <h1 class="thank-you-title">Thank you!</h1> 
       <p class="thank-you-text">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
@@ -69,7 +58,9 @@
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by <a href="https://www.manudequevedo.com" target="_blank">Manu de Quevedo</a>.
 		</div>
+
+		<script src="main.js"></script>
 	</body>
 </html>
